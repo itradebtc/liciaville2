@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { Modak } from 'next/font/google'
+import Dropdownn from './component/Dropdownn';
 
 const mod = Modak({ subsets:['latin'],
 weight:['400']
@@ -58,7 +59,11 @@ export default function Booking() {
                     </div>
                     <div className='flex flex-col'>
                       <label className='py-2 text-lg'>Rooms <span className='text-red-900 text-sm'>*</span></label>
-                      <input type="number" placeholder="Rooms" name='room' min={1} max={15} className="border-l-4 border-l-yellow-600 border-r-4 border-r-yellow-600 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md bg-transparent" onChange={(e) => setPhone(e.target.value)} required />
+                      <div className='flex space-x-7'>
+                        <Dropdownn />
+                        {/* <input type="number" placeholder="Rooms" name='room' min={1} max={15} className="border-l-4 border-l-yellow-600 border-r-4 border-r-yellow-600 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md w-80 bg-transparent" onChange={(e) => setPhone(e.target.value)} required /> */}
+                      <input type="number" placeholder="Number" name='number' min={1} max={15} className="border-l-4 border-l-yellow-600 border-r-4 border-r-yellow-600 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md w-40 bg-transparent" onChange={(e) => setPhone(e.target.value)} required />
+                      </div>
                     </div>
                     <div className='flex flex-col u-form-group u-form-message space-y-2 mb-3'>
                       <label className='text-lg'>Special Requests?</label>

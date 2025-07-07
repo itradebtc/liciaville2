@@ -1,0 +1,16 @@
+/* [project]/src/app/main.module.css [app-client] (css) */
+@media screen and (width <= 768px) {
+  .main-module__hLtVbG__welcome {
+    background: url("../media/mainswipe1.09c3489d.JPG") center / cover;
+    height: 50vh;
+  }
+}
+
+@media screen and (width >= 769px) {
+  .main-module__hLtVbG__welcome {
+    background: url("../media/mainswipe1.09c3489d.JPG") center / cover;
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=src_app_main_module_css_f9ee138c._.single.css.map*/
